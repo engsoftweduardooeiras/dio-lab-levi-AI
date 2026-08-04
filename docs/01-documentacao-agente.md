@@ -61,7 +61,7 @@ flowchart TD
 |------------|-----------|
 | Interface | [Streamlit](https://streamlit.io/) |
 | LLM | Ollama (local) |
-| Base de Conhecimento | JSON/CSV com dados do cliente na pasta `data` |
+| Base de Conhecimento | JSON/CSV com dados mockados do cliente na pasta `data` |
 | Validação | Chegagem de Alucinações e Coerência de Dados |
 
 ---
