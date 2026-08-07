@@ -71,18 +71,26 @@ with open('data/produtos_financeiros.json', 'r', encoding='utf-8') as f:
 
 ---
 
-## Exemplo de Contexto Montado
+### Exemplo de Contexto Montado
 
-> Mostre um exemplo de como os dados são formatados para o agente.
+> Mostrando exemplos de como os dados são formatados para o agente
 
 ```
-Dados do Cliente:
-- Nome: João Silva
-- Perfil: Moderado
-- Saldo disponível: R$ 5.000
+Dados do Dispositivo e Conectividade:
+- IP do Dispositivo: 192.168.228.19
+- Tipo de Conexão: Fibra residencial
+- Última Ação Cadastrada: Autenticação MFA
 
-Últimas transações:
-- 01/11: Supermercado - R$ 450
-- 03/11: Streaming - R$ 55
+Informações da Transação Atual:
+- Tempo Decorrido (Time): 0.0 segundos
+- Valor Comercial (Amount): R$ 149,62
+- Classificação de Risco (Class): 0 (Legítima)
+
+Indicadores Vetoriais de Comportamento (PCA):
+- Componente V1: -1.3598
+- Componente V2: -0.0728
+- Componente V3: 2.5363
+- Componente V4: 1.3781
+- Componente V5: -0.3383
 ...
 ```
