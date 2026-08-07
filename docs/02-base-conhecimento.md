@@ -2,7 +2,7 @@
 
 ## Dados Utilizados
 
-Descreva se usou os arquivos da pasta `data`, por exemplo:
+Descrição de uso dos arquivos da pasta `data`, por exemplo:
 
 | Arquivo | Formato | Utilização no Agente |
 |---------|---------|---------------------|
@@ -10,6 +10,14 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 | `perfil_investidor.json` | JSON | Personalizar recomendações |
 | `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
 | `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
+| `Linha_de_cartao_de_credito_enriquecido_parte_1A_1.csv`| CSV | Analisar histórico de operações |
+| `Linha_de_cartao_de_credito_enriquecido_parte_1A_2.csv`| CSV | Analisar histórico de operações |
+| `Linha_de_cartao_de_credito_enriquecido_parte_1A_3.csv`| CSV | Analisar histórico de operações |
+| `Linha_de_cartao_de_credito_enriquecido_parte_1B_1.csv`| CSV | Analisar histórico de operações |
+| `Linha_de_cartao_de_credito_enriquecido_parte_1B_2.csv`| CSV | Analisar histórico de operações |
+| `Linha_de_cartao_de_credito_enriquecido_parte_1B_3.csv`| CSV | Analisar histórico de operações |
+| `Linha_de_cartao_de_credito_enriquecido_parte_2A.csv`| CSV | Analisar histórico de operações |
+| `Linha_de_cartao_de_credito_enriquecido_parte_2B.csv`| CSV | Analisar histórico de operações |
 
 > [!TIP]
 > **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
@@ -18,23 +26,48 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 ## Adaptações nos Dados
 
-> Você modificou ou expandiu os dados mockados? Descreva aqui.
+> Expandi e modifiquei os dados mockados?
 
-[Sua descrição aqui]
+Adcionei os dados de `Cartao_de_cerdito_url_geral_arquivo_original`, ampliado em arquivos separados como `Linha_de_cartao_de_credito_enriquecido_parte_1A_1.csv`, em complementação aos dados de `transacoes.csv`
 
 ---
 
 ## Estratégia de Integração
 
 ### Como os dados são carregados?
-> Descreva como seu agente acessa a base de conhecimento.
+> Descrição de como esse agente acessa a base de conhecimento:
 
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
-[Sua descrição aqui]
+Os dados serão inseridos diretamente no terminal com estrutura dinâmica que permite a abertura
+
+```python
+import pandas as pd
+import json
+
+
+# CSVs
+historico = pd.read_csv('data/historico_atendimento.csv')
+transacoes = pd.read_csv('data/transacoes.csv')
+linha_de_credito_1A_1 = pd.read_csv(`data/Linha_de_cartao_de_credito_enriquecido_parte_1A_1.csv`)
+linha_de_credito_1A_2 = pd.read_csv(`data/Linha_de_cartao_de_credito_enriquecido_parte_1A_2.csv`)
+linha_de_credito_1A_3 = pd.read_csv(`data/Linha_de_cartao_de_credito_enriquecido_parte_1A_3.csv`)
+linha_de_credito_1B_1 = pd.read_csv(`data/Linha_de_cartao_de_credito_enriquecido_parte_1B_1.csv`)
+linha_de_credito_1B_2 = pd.read_csv(`data/Linha_de_cartao_de_credito_enriquecido_parte_1B_2.csv`)
+linha_de_credito_1B_3 = pd.read_csv(`data/Linha_de_cartao_de_credito_enriquecido_parte_1B_3.csv`)
+linha_de_credito_2A = pd.read_csv(`data/Linha_de_cartao_de_credito_enriquecido_parte_2A.csv`)
+linha_de_credito_2B = pd.read_csv(`data/Linha_de_cartao_de_credito_enriquecido_parte_2B.csv`)
+
+
+# JSONs
+with open('data/perfil_investidor.json', 'r', encoding='utf-8') as f:
+    perfil = json.load(f)
+    
+with open('data/produtos_financeiros.json', 'r', encoding='utf-8') as f:
+    produtos = json.load(f)
 
 ---
 
