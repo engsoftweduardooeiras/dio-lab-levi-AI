@@ -30,7 +30,7 @@ Descrição de uso dos arquivos da pasta `data`, por exemplo:
 
 > Expandi e modifiquei os dados mockados?
 
-Adcionei os dados de `Cartao_de_cerdito_url_geral_arquivo_original`, ampliado em arquivos separados como `Linha_de_cartao_de_credito_enriquecido_parte_1A_1.csv`, em complementação aos dados de `transacoes.csv`
+Adcionei os dados de `Cartao_de_cerdito_url_geral_arquivo_original`, ampliado em arquivos separados como `cartao_de_credito_sintetico_parte_01.csv`, em complementação aos dados de `transacoes.csv`
 
 ---
 
