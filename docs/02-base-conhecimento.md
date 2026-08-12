@@ -86,15 +86,52 @@ Dados do Dispositivo e Conectividade:
 - Última Ação Cadastrada: Autenticação MFA
 
 Informações da Transação Atual:
-- Tempo Decorrido (Time): 0.0 segundos
+- Tempo Decorrido (Time): 0,0 segundos
 - Valor Comercial (Amount): R$ 149,62
 - Classificação de Risco (Class): 0 (Legítima)
 
 Indicadores Vetoriais de Comportamento (PCA):
-- Componente V1: -1.3598
-- Componente V2: -0.0728
-- Componente V3: 2.5363
-- Componente V4: 1.3781
-- Componente V5: -0.3383
+- Componente V1: -1,3598
+- Componente V2: -0,0728
+- Componente V3: 2,5363
+- Componente V4: 1,3781
+- Componente V5: -0,3383
+- ...
+- Componente V28: -0,0211
+
+Perfil Financeiro:
+- Idade: 69 anos
+- Renda Mensal: R$ 6.202,93
+- Tempo de Relacionamento: 123 meses
+- Quantidade de Produtos: 5
+
+Crédito e Produtos:
+- Elegível para Empréstimo Pessoal: Sim
+- Empréstimo Pessoal Contratado: Não
+- Limite de Empréstimo Pessoal: R$ 0,00
+- Empréstimo Consignado: Não
+- Financiamento de Veículo: Sim
+- Financiamento Imobiliário: Sim
+- Cheque Especial Contratado: Não
+- Limite de Cheque Especial: R$ 0,00
+
+Movimentação e Canais:
+- PIX Ativo: Sim
+- TED Ativa: Sim
+- Cartão de Débito Ativo: Sim
+- Débito Automático Ativo: Não
+- Transações PIX/mês: 16
+- Transações TED/mês: 2
+- Transações de Débito/mês: 31
+- Valor Médio PIX: R$ 18,49
+- Valor Médio TED: R$ 1.031,24
+
+Comportamento de Crédito:
+- Utilização do Crédito: 33,15%
+- Parcelamentos Ativos: 2
+- Indicador de Atraso: Não
+
+Metadado:
+- Registro Sintético: SYNTHETIC_TEST_DATA_ONLY
 ...
 ```
