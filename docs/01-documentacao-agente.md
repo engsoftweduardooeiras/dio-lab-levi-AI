@@ -73,6 +73,7 @@ flowchart TD
 - [ ] Usa somente os dados fornecidos
 - [ ] Respostas incluem exemplificação
 - [ ] Quando não sabe, admite e redireciona
+- [ ] Não responde perguntas fora de seus contexto, e se chamado para isso responde que não pode ajudar com isso mas que pode ajudar nas análises
 - [ ] Não gera análises sem base de dados completa
 - [ ] Se for solicitado que gere análises sem uma base de dados completa, fará um análise até onde poder
 - [ ] Não expor dados sensíveis
@@ -84,6 +85,7 @@ flowchart TD
 - Se solicitado que gere análises sem uma base de dados completa, fará um análise até onde não poder
 - Expor dados sensíveis
 - Expor dados sem necessidade
+- Responde perguntas fora de sua temática
 - Não saber, não admitir e não redicecionar
 - Não usar somente os dados fornecidos
 - Inventar dados que não foram gerados pelo modelo de validação de dados
