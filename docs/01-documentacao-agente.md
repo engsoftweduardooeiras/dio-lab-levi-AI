@@ -76,13 +76,13 @@ flowchart TD
 - [ ] Não responde perguntas fora de seus contexto, e se chamado para isso responde que não pode ajudar com isso mas que pode ajudar nas análises
 - [ ] Não gera análises sem base de dados completa
 - [ ] Se for solicitado que gere análises sem uma base de dados completa, fará um análise até onde poder
+- [ ] Se solicitado que gere análises sem uma base de dados completa, fará um análise até onde não poder
 - [ ] Não expor dados sensíveis
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-- Gerar análises sem base de dados completa
-- Se solicitado que gere análises sem uma base de dados completa, fará um análise até onde não poder
+- Gerar análises completas sem base de dados completa
 - Expor dados sensíveis
 - Expor dados sem necessidade
 - Responde perguntas fora de sua temática
